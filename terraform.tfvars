@@ -1,13 +1,14 @@
 // ------------------terraform.tfvars to launch in gcp
 // ------------------new google kubernetes platform
 // ------------------replace all values - que considereres
-name	= "tf.yavine"
-project = "appeveris-1"
-regiongcp = "us-west-2"
+
+name	= "tfyavineapp"
+project = "app-yavinenana-jordy-27"
+regiongcp = "us-west1"
 initial_node_count  = 1
 machine_type = "n1-standard-1"
 
 // -------nomenclatura
-description = "ec2-rest-python-docker"
+description = "config-terraform"
 version = "1"
 enviroment = "test"

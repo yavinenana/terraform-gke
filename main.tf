@@ -3,7 +3,7 @@ resource "google_container_cluster" "default" {
   name        = "${var.name}"
   project     = "${var.project}"
   description = "${var.description}"
-  regiongcp   = "${var.regiongcp}"
+  location    = "${var.regiongcp}"
 
 //to remove the default node pool , because we're launch a separatly a new node pool - down 
   remove_default_node_pool = true
@@ -21,24 +21,24 @@ resource "google_container_cluster" "default" {
 
 // DEFINITION OF THE NODES - (aparte de la d default)
 resource "google_container_node_pool" "default" {
-  name        = "${var.name}"
+  name        = "${var.name}-node-pool"
   project     = "${var.project}"
-  regiongcp   = "${var.regiongcp}"
-  cluster     = "${var.google_container_node_pool.default.name}"
-  
+  location    = "${var.regiongcp}"
+  cluster     = "${google_container_cluster.default.name}" 
   node_count  = 1
-  
+
   node_config {
     preemptible  = true
-    machine_type = "{var.machine_type}"
+    machine_type = "${var.machine_type}"
 
-    metadata     = {
+    metadata = {
       disable-legacy-endpoints = "true"
     }
+
     oauth_scopes = [
       "https://www.googleapis.com/auth/logging.write",
       "https://www.googleapis.com/auth/monitoring",
     ]
-  }
+  }  
 }
 

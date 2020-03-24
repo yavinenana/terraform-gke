@@ -1,0 +1,21 @@
+terraform delete workspace jordy-workspace
+terraform show
+terraform state list
+terraform plan -var-file instances_tfvars/odoo12.tfvars 
+gcloud projects list
+gcloud config set project gcp-api-everis1
+gcloud services list --available | grep -i "kubernetes"
+terraform apply 
+gcloud services list --available | grep -i "container"
+gcloud services enable containeranalysis.googleapis.com
+gcloud services enable containerscanning.googleapis.com
+gcloud services enable containerregistry.googleapis.com
+gcloud services enable container.googleapis.com
+gcloud auth login
+gcloud init --console-only --account yavinenana@gmail.com 
+gcloud config set project gcp-api-everis1
+export GOOGLE_APPLICATION_CREDENTIALS="/home/jordy/gcp-gke-api/key.json"
+export GOOGLE_CLOUD_PROJECT="gcp-api-everis1"
+gcloud auth login
+gcloud iam service-accounts keys create ~/gcp-gke-api/yavinenana.json --iam-account san-jordy@app-yavinenana-jordy-27.iam.gserviceaccount.com 
+gcloud projects list
