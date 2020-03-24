@@ -1,4 +1,13 @@
 # Deploy ec2 to production
+ - Create a CONTAINER CLUSTER and NODE POOL - it took about 3 minutes , and you may be put "yes" to create
+Print endpoint and master_version so 
+Before that you run terraform :
+* you will have to be authenticated via google cloug console - GCLOUD
+ gcloud config set project $PROJECT_ID
+# this key.json was created from service account 
+ export GOOGLE_APPLICATION_CREDENTIALS="/home/jordy/gcp-gke-api/key.json"
+ export GOOGLE_CLOUD_PROJECT=$PROJECT_ID
+
 *** INSTRUCCIONES ***
 Este repo crea un ec2, segurity group, elasticip ,iam role , policy
 

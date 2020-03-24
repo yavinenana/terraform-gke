@@ -19,7 +19,7 @@ resource "google_container_cluster" "default" {
   }
 }
 
-// DEFINITION OF THE NODES
+// DEFINITION OF THE NODES - (aparte de la d default)
 resource "google_container_node_pool" "default" {
   name        = "${var.name}"
   project     = "${var.project}"
