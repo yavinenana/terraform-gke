@@ -3,7 +3,7 @@
 // ------------------replace all values - que considereres
 
 name	= "tfyavineapp"
-project = "app-yavinenana-jordy-27"
+project = "projectjfpb2"
 regiongcp = "us-west1"
 initial_node_count  = 1
 machine_type = "n1-standard-1"
