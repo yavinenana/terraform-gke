@@ -1,4 +1,4 @@
-# function with Terraform v0.11.13 --- in new version you must removed quotes
+# function with Terraform v0.12.24 / + provider.google v3.15.0 --- in new version you must removed quotes
 # download binary terraform https://releases.hashicorp.com/terraform/0.11.13/
 # Deploy CLUSTER K8S on GOOGLE CLOUD PLATFORM
  - Create a CONTAINER CLUSTER and NODE POOL - it took about 3 minutes , and you may be put "yes" to create

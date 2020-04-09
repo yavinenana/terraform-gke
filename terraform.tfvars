@@ -10,5 +10,5 @@ machine_type = "n1-standard-1"
 
 // -------nomenclatura
 description = "config-terraform"
-version = "1"
+versio = "1"
 enviroment = "test"

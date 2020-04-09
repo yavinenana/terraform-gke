@@ -4,5 +4,5 @@ variable "regiongcp" {}
 variable "initial_node_count" {}
 variable "machine_type" {}
 variable "description" {}
-variable "version" {}
+variable "versio" {}
 variable "enviroment" {}
