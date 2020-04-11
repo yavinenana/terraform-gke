@@ -31,5 +31,6 @@ Este repo crea un ec2, segurity group, elasticip ,iam role , policy
 . terraform get -update=true
 # ###########################
 
+https://discuss.hashicorp.com/t/terraform-0-12-14-released/3898/8
 https://www.terraform.io/docs/configuration/expressions.html
  Interpolation
