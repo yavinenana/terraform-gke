@@ -9,6 +9,7 @@ initial_node_count  = 1
 machine_type = "n1-standard-1"
 
 // -------nomenclatura
-description = "config-terraform"
+description_dev = "description terraform dev"
+description_prod = "description terraform prod"
 versio = "1"
 enviroment = "test"
