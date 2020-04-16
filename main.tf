@@ -2,12 +2,14 @@
 resource "google_container_cluster" "default" {
   name        = "${var.name}"
   project     = "${var.project}"
-  description = "${var.description}"
+//  description = "${var.description}"
+  description = "${var.enviroment == "test" ? var.description_dev : var.description_prod}"
   location    = "${var.regiongcp}"
 
 //to remove the default node pool , because we're launch a separatly a new node pool - down 
   remove_default_node_pool = true
-  initial_node_count = "${var.initial_node_count}"
+//  initial_node_count = "${var.initial_node_count}"
+  initial_node_count = "${var.enviroment == "test" ? var.initial_node_count : 2}"
   
   master_auth {
     username = ""

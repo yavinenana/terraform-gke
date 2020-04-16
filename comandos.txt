@@ -18,3 +18,5 @@ export GOOGLE_CLOUD_PROJECT=$PROJECT-ID
 gcloud auth login
 gcloud iam service-accounts keys create $PATH/new-key.json --iam-account san-jordy@$PROJECT-ID.iam.gserviceaccount.com 
 gcloud projects list
+gcloud container clusters list
+gcloud container clusters describe $CLUSTER-NAME

@@ -30,3 +30,6 @@ Este repo crea un ec2, segurity group, elasticip ,iam role , policy
 # to update new modules
 . terraform get -update=true
 # ###########################
+
+https://www.terraform.io/docs/configuration/expressions.html
+ Interpolation
